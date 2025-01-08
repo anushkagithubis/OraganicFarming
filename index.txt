@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+}
+.home-page-content{
+    text-align:center;
+    padding:200px;
+    color:white;
+    font-size:30px;
+
+}
+body{
+    background-image:url('main picture.jfif');
+    height:100vh;
+    width:100vw;
+    position:relative;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+nav.logo{
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    line-height:70px;
+    padding-left:110px;
+
+}
+nav{
+    height:70px;
+    background:#063247;
+    box-shadow:0 3px 15px rgba(0,0,0,.4);
+}
+nav ol{
+    float:right;
+    margin-right:30px;
+
+}
+nav ol li{
+    display:inline-block;
+
+}
+nav ol li a{
+    color:white;
+    display:block;
+    padding:0 15px;
+    line-height:70px;
+    font-size:20px;
+    background:#063247;
+    transition:.5s;
+
+}
+nav ol li a:hover,
+nav ol li a.active{
+    color:#23dbdb;
+}
+nav ol ol{
+    position:absolute;
+    top:85px;
+    border-top:3px solid #23dbdb;
+    opacity: 0;
+    visibility:hidden;
+    
+
+}
+nav ol li:hover>ol{
+    top:70px;
+    opacity:1;
+    visibility:visible;
+    transition:.3s linear;
+}
+nav ol ol li{
+    width:180px;
+    display:list-item;
+    position:relative;
+    border:1px solid #042331;
+    border-top:none;
+
+}
+nav ol ol li a{
+    line-height:50px;
+}
+nav ol ol ol{
+    border-top:none;
+
+}
+nav ol ol ol li{
+    position:relative;
+    top:-70px;
+    left:150px;
+}
+
+nav ol ol li a i{
+    margin-left:45px;
+
+}
+</style>
+<body>
+    <nav>
+        <label class="logo">Organic Farming</label>
+        <ol>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ol>
+    </nav>
+    <div class="overlay">
+    <div class="home-page-content">
+    <h1 class="text-center home-page-text h1-responsive">Organic Agriculture</h1>
+    <h3 class="text-center home-supporting-text">Bringing you the freshest produce in the land</h3>
+    </div>
+    </div>
+
+</body>
+</html>
